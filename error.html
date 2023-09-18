@@ -1,1 +1,75 @@
-<h1>Please do not use direct URLS.. please use lbssgames.github.io and navigate through the screens. </h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Experiment</title>
+  <style>
+    #countdown-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+
+    #countdown-box {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      font-size: 48px;
+      text-align: center;
+      width: 125px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #redirecting-text {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Please do not use direct URLS.. please use lbssgames.github.io and navigate through the screens.</h1>
+
+  <script>
+    // Function to redirect to the root URL
+    function redirectToRoot() {
+      window.location.href = '/';
+    }
+
+    // Function to display countdown and redirect after 5 seconds
+    function displayCountdown() {
+      var countdownContainer = document.getElementById('countdown-container');
+      countdownContainer.style.display = 'block';
+
+      var countdownElement = document.getElementById('countdown');
+      var count = 5;
+      countdownElement.innerHTML = count;
+
+      var countdownInterval = setInterval(function() {
+        count--;
+        countdownElement.innerHTML = count;
+
+        if (count === 0) {
+          clearInterval(countdownInterval);
+          redirectToRoot();
+        }
+      }, 1000);
+    }
+
+    // Wait for 3 seconds and then display countdown
+    setTimeout(displayCountdown, 3000);
+  </script>
+
+  <div id="countdown-container">
+    <div id="countdown-box">
+      <div id="redirecting-text">Redirecting in</div>
+      <div id="countdown"></div>
+    </div>
+  </div>
+</body>
+</html>
