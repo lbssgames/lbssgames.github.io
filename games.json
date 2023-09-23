@@ -1,0 +1,15 @@
+{
+	"icon": "/projects/sm64/logo.png",
+	"name": "Super Mario 64",
+	"link": "/projects/sm64/index.html"
+},
+{
+	"icon": "path/to/icon2.png",
+	"name": "Game 2",
+	"link": "https://example.com/game2"
+},
+{
+	"icon": "path/to/icon3.png",
+	"name": "Game 3",
+	"link": "https://example.com/game3"
+}
