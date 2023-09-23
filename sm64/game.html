@@ -39,40 +39,38 @@
       if (document.referrer.indexOf(window.location.origin) === -1) {
         window.location.href = '/error.html'; // Redirect to an error page
       } else {
-        window.addEventListener('DOMContentLoaded', function() {
-          var Module = {
-            preRun: [],
-            postRun: [],
-            print: (function() {
-              return function(text) {
-                if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
-                console.log(text);
-              };
-            })(),
-            printErr: function(text) {
-              if (arguments.length > 1)
-                text = Array.prototype.slice.call(arguments).join(' ');
-              console.error(text);
-            },
-            canvas: (function() {
-              var canvas = document.createElement('canvas');
-              canvas.width = window.innerWidth; // Todo: how to do this from c++
-              canvas.height = window.innerHeight;
-              canvas.addEventListener("webglcontextlost", function(e) {
-                alert('WebGL context lost. You will need to reload the page.');
-                e.preventDefault();
-              }, false);
-              document.getElementById('container').appendChild(canvas);
-              return canvas;
-            })(),
-            setStatus: function(text) {
-            }
-          };
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = 'sm64.us.f3dex2e.js';
-          document.body.appendChild(script);
-        });
+        var Module = {
+          preRun: [],
+          postRun: [],
+          print: (function() {
+            return function(text) {
+              if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
+              console.log(text);
+            };
+          })(),
+          printErr: function(text) {
+            if (arguments.length > 1)
+              text = Array.prototype.slice.call(arguments).join(' ');
+            console.error(text);
+          },
+          canvas: (function() {
+            var canvas = document.createElement('canvas');
+            canvas.width = window.innerWidth; // Todo: how to do this from c++
+            canvas.height = window.innerHeight;
+            canvas.addEventListener("webglcontextlost", function(e) {
+              alert('WebGL context lost. You will need to reload the page.');
+              e.preventDefault();
+            }, false);
+            document.getElementById('container').appendChild(canvas);
+            return canvas;
+          })(),
+          setStatus: function(text) {
+          }
+        };
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'sm64.us.f3dex2e.js';
+        document.body.appendChild(script);
       }
     </script>
     <div id="container"></div>
