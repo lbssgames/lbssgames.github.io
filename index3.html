@@ -1,1 +1,88 @@
-<h1>Coming in 3-5 business days...</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .game-card {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .game-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .game-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .game-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container" id="game-grid"></div>
+
+    <script>
+        // Example JSON data for game grid
+        var games = [
+            {
+                "icon": "path/to/icon1.png",
+                "name": "Game 1",
+                "link": "https://example.com/game1"
+            },
+            {
+                "icon": "path/to/icon2.png",
+                "name": "Game 2",
+                "link": "https://example.com/game2"
+            },
+            {
+                "icon": "path/to/icon3.png",
+                "name": "Game 3",
+                "link": "https://example.com/game3"
+            }
+        ];
+
+        // Create game cards dynamically from JSON data
+        var gameGrid = document.getElementById("game-grid");
+        games.forEach(function(game) {
+            var gameCard = document.createElement("div");
+            gameCard.classList.add("game-card");
+
+            var icon = document.createElement("img");
+            icon.classList.add("game-icon");
+            icon.src = game.icon;
+            icon.addEventListener("click", function() {
+                window.location.href = game.link;
+            });
+
+            var title = document.createElement("h2");
+            title.classList.add("game-title");
+            title.textContent = game.name;
+
+            var link = document.createElement("a");
+            link.classList.add("game-link");
+            link.href = game.link;
+            link.textContent = "Play now";
+
+            gameCard.appendChild(icon);
+            gameCard.appendChild(title);
+            gameCard.appendChild(link);
+            gameGrid.appendChild(gameCard);
+        });
+    </script>
+</body>
+</html>
