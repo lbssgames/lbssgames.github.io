@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
     <title>Super Mario 64</title>
     <link rel="icon" href="logo.png">
     <style>
-      body, html {
+      body, html{
         margin: 0;
         padding: 0;
         width: 100vw;
@@ -34,8 +34,10 @@
     </style>
   </head>
   <body>
+    <div id="container">
+      <canvas class="emscripten" id="canvas"></canvas>
+    </div>
     <script type='text/javascript'>
-      // Check if the user was referred from inside the website
       if (document.referrer.indexOf(window.location.origin) === -1) {
         window.location.href = '/error.html'; // Redirect to an error page
       } else {
@@ -54,26 +56,20 @@
             console.error(text);
           },
           canvas: (function() {
-            var canvas = document.createElement('canvas');
+            var canvas = document.getElementById('canvas');
             canvas.width = window.innerWidth; // Todo: how to do this from c++
             canvas.height = window.innerHeight;
             canvas.addEventListener("webglcontextlost", function(e) {
               alert('WebGL context lost. You will need to reload the page.');
               e.preventDefault();
             }, false);
-            document.getElementById('container').appendChild(canvas);
             return canvas;
           })(),
           setStatus: function(text) {
           }
         };
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = 'sm64.us.f3dex2e.js';
-        document.body.appendChild(script);
-      }
     </script>
-    <div id="container"></div>
+    <script async type="text/javascript" src="sm64.us.f3dex2e.js"></script>
     <script type="application/javascript" src="/js/main.js"></script>
   </body>
 </html>
