@@ -5,9 +5,9 @@
 		"link": "/projects/sm64/index.html"
 	},
 	{
-		"icon": "path/to/icon2.png",
-		"name": "Game 2",
-		"link": "https://example.com/game2"
+		"icon": "/projects/slope/logo.png",
+		"name": "Slope",
+		"link": "/projects/slope/index.html"
 	},
 	{
 		"icon": "path/to/icon3.png",
