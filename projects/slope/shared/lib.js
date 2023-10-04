@@ -60,10 +60,8 @@ function enableSound() {
         if (!root) {
             root = document.getElementsByClassName("template-wrap")[0];
         }
-        root.appendChild(soundOverlay);
         
         // Automatically turn on audio
         enableSound();
-        soundOverlay.style.display = "none";
     });
 })();
