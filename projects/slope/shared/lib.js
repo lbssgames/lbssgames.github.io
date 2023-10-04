@@ -41,9 +41,7 @@ window.BrowserDetector = (function () {
         opera: detect.name == "Opera",
     };
 })();
-function enableSound() {
-    return;
-}
+
 !(function () {
     if (window.UnityLoader) {
         if (window.UnityLoader.compatibilityCheck) {
@@ -59,9 +57,6 @@ function enableSound() {
         var root = document.getElementsByClassName("webgl-content")[0];
         if (!root) {
             root = document.getElementsByClassName("template-wrap")[0];
-        }
-        
-        // Automatically turn on audio
-        enableSound();
+        }  
     });
 })();
