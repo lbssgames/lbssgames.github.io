@@ -62,7 +62,6 @@ function enableSound() {
         return overlay;
     }
     function buildSoundText() {
-        const textNode = document.createTextNode("Click here to enable sound!");
         const textSpan = document.createElement("span");
         textSpan.classList.add("sound-text");
         textSpan.appendChild(textNode);
