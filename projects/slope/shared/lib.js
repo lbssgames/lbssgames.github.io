@@ -55,14 +55,6 @@ function enableSound() {
     if (!(BrowserDetector.chrome && BrowserDetector.version >= 66)) {
         return;
     }
-    function buildSoundOverlay() {
-        const overlay = document.createElement("div");
-        overlay.classList.add("sound-overlay");
-        overlay.setAttribute("id", "sound-overlay");
-        return overlay;
-    }
-    const soundOverlay = buildSoundOverlay();
-    soundOverlay.appendChild(buildSoundText());
     document.addEventListener("DOMContentLoaded", function () {
         var root = document.getElementsByClassName("webgl-content")[0];
         if (!root) {
