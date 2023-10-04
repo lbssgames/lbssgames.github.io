@@ -61,12 +61,6 @@ function enableSound() {
         overlay.setAttribute("id", "sound-overlay");
         return overlay;
     }
-    function buildSoundText() {
-        const textSpan = document.createElement("span");
-        textSpan.classList.add("sound-text");
-        textSpan.appendChild(textNode);
-        return textSpan;
-    }
     const soundOverlay = buildSoundOverlay();
     soundOverlay.appendChild(buildSoundText());
     document.addEventListener("DOMContentLoaded", function () {
