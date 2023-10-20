@@ -10,8 +10,8 @@
 		"link": "/projects/slope/index.html"
 	},
 	{
-		"icon": "path/to/icon3.png",
-		"name": "Game 3",
-		"link": "https://example.com/game3"
+		"icon": "/projects/paperio2/logo.png",
+		"name": "Paper.io 2",
+		"link": "/projects/paperio2/index.html"
 	}
 ]
