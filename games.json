@@ -10,6 +10,11 @@
 		"link": "/projects/slope/index.html"
 	},
 	{
+		"icon": "/projects/paperio2/logo.png",
+		"name": "Paper.io 2",
+		"link": "/projects/paperio2/index.html"
+	},
+	{
 		"icon": "/projects/motox3m/logo.png",
 		"name": "Moto x3m",
 		"link": "/projects/motox3m/index.html"
