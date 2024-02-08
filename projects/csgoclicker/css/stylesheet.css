@@ -895,7 +895,7 @@ html, body {
 .tradeButtonContainer {
 	height: 135px;
 	position: absolute;
-	width: 100%;
+	width: 50%;
 	bottom: 0;
 	border-top: 1px #186144 solid;
 }
