@@ -895,7 +895,7 @@ html, body {
 .tradeButtonContainer {
 	height: 135px;
 	position: absolute;
-	width: 50%;
+	width: 100%;
 	bottom: 0;
 	border-top: 1px #186144 solid;
 }
@@ -1253,7 +1253,7 @@ div.knife {
   line-height: 85px;
   color: #fff;
   margin: 20px auto;
-  width: 350px;
+  width: 100px;
   height: 85px;
   background: linear-gradient(#1d7751, #0e382c);
   border: 3px #25793b solid;
