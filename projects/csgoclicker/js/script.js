@@ -813,7 +813,7 @@ $(".jackpotDifficulty").click(function() {
     $(".jackpotDifficultyContainer div").removeClass("active");
     $(this).addClass("active");
 
-    jackpotDifficulty = this.id;
+    jackpotDifficulty = this.id;tradeButton
 
   }
 });

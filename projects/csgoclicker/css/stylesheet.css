@@ -900,14 +900,6 @@ html, body {
 	border-top: 1px #186144 solid;
 }
 
-.autoClickButtonContainer {
-	height: 135px;
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	border-top: 1px #186144 solid;
-}
-
 .container {
   height: 100%;
 	width: 100%;
@@ -1253,7 +1245,7 @@ div.knife {
   line-height: 85px;
   color: #fff;
   margin: 20px auto;
-  width: 100px;
+  width: 350px;
   height: 85px;
   background: linear-gradient(#1d7751, #0e382c);
   border: 3px #25793b solid;

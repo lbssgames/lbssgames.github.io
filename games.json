@@ -23,5 +23,10 @@
 		"icon": "/projects/run2/logo.png",
 		"name": "Run 2",
 		"link": "/projects/run2/index.html"
+	},
+	{
+		"icon": "/projects/csgoclicker/logo.png",
+		"name": "CSGO Clicker",
+		"link": "/projects/csgoclicker/index.html"
 	}
 ]
