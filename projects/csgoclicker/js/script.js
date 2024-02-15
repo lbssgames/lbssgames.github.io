@@ -833,7 +833,6 @@ $(".about").click(function() {
 
 $(".autoclick").click(function() {
   autoclick = !autoclick
-  var notification = new Notification("hi")
   while (autoclick) {
     setInterval(1)
     money += acceptMoneyPerClick
