@@ -8,6 +8,7 @@ var money = 7.50;
 var currentCase = "case2";
 var acceptMoneyPerClick = 0.1;
 var autoclick = false;
+var autoClickDelay = 300;
 
 
 
@@ -844,7 +845,7 @@ function autoclickTasks() {
     money += acceptMoneyPerClick;
 
     // Call the function again after 2 seconds
-    setTimeout(autoclickTasks, 2000);
+    setTimeout(autoclickTasks, autoClickDelay);
   }
 }
 
