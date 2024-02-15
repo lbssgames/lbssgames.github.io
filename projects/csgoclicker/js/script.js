@@ -837,9 +837,9 @@ $(".about").click(function() {
 $(".autoclick").click(function() {
   autoclick = !autoclick;
   if (autoclick) {
-    document.getElementsByClassName('autoclick').style.color = "#100000"
+    document.getElementById('autoclickButton').style.color = "#100000"
   } else {
-    document.getElementsByClassName('autoclick').style.color = "#934827"
+    document.getElementById('autoclickButton').style.color = "#934827"
   }
   autoclickTasks();
 });
