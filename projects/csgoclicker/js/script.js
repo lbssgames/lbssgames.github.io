@@ -8,7 +8,7 @@ var money = 7.50;
 var currentCase = "case2";
 var acceptMoneyPerClick = 0.1;
 var autoclick = false;
-var autoClickDelay = 300;
+var autoClickDelayautoClickDelay = 300;
 
 
 
@@ -835,6 +835,11 @@ $(".about").click(function() {
 });
 
 $(".autoclick").click(function() {
+  if (autoclick) {
+    document.getElementById('.autoclick').style.color = "#100000"
+  } else {
+    document.getElementById('.autoclick').style.color = "#934827"
+  }
   autoclick = !autoclick;
   autoclickTasks();
 });
