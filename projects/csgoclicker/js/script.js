@@ -838,8 +838,10 @@ $(".autoclick").click(function() {
 });
 
 while (autoclick) {
-  await sleep(1);
-  money += acceptMoneyPerClick;
+  setTimeout(function() { 
+    // Add tasks to do 
+    money += acceptMoneyPerClick;
+  }), 2000
 }
 
 /*===============TABS===============*/
