@@ -7,6 +7,7 @@ var fps = 15;
 var money = 7.50;
 var currentCase = "case2";
 var acceptMoneyPerClick = 0.1;
+var autoclick = false;
 
 
 
@@ -828,6 +829,14 @@ $("#acceptButton").click(function() {
 
 $(".about").click(function() {
   $(".main").toggleClass("small");
+});
+
+$(".autoclick").click(function() {
+  autoclick = !autoclick
+  while (autoclick) {
+    setInterval(1)
+    money += acceptMoneyPerClick
+  }
 });
 
 /*===============TABS===============*/
