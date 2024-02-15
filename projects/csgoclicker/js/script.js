@@ -835,12 +835,12 @@ $(".about").click(function() {
 });
 
 $(".autoclick").click(function() {
+  autoclick = !autoclick;
   if (autoclick) {
     document.getElementById('.autoclick').style.color = "#100000"
   } else {
     document.getElementById('.autoclick').style.color = "#934827"
   }
-  autoclick = !autoclick;
   autoclickTasks();
 });
 
