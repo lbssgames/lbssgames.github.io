@@ -946,8 +946,8 @@ function caseInfo() {
 }
 
 function update() {
-  // $('#money').html("$" + money.toFixed(2));
-  $('#money').html("$" + autoclick);
+  $('#money').html("$" + money.toFixed(2));
+  // $('#money').html("$" + autoclick);
   $('#inventorySpace').html(inventoryCurrent + "/" + inventoryMax);
 }
 
