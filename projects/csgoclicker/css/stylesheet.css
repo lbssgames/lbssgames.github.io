@@ -82,6 +82,14 @@ html, body {
 	background: url(https://i.imgur.com/zoKOaEY.png) no-repeat;
 }
 
+.autoClick {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 50px;
+	line-height: 50px;
+	float: right;
+	cursor: pointer;
+}
 .about {
 	color: #fff;
 	text-decoration: none;
