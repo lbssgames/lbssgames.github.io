@@ -833,10 +833,10 @@ $(".about").click(function() {
 
 $(".autoclick").click(function() {
   autoclick = !autoclick
-  while (autoclick) {
-    setInterval(1)
-    money += acceptMoneyPerClick
-  }
+  // while (autoclick) {
+  //   setInterval(1)
+  //   money += acceptMoneyPerClick
+  // }
 });
 
 /*===============TABS===============*/
