@@ -832,7 +832,7 @@ $(".about").click(function() {
 });
 
 $(".autoclick").click(function() {
-  autoclick = !autoclick
+  autoclick = !autoclick;
   // while (autoclick) {
   //   setInterval(1)
   //   money += acceptMoneyPerClick
