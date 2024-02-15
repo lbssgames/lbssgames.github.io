@@ -835,13 +835,17 @@ $(".about").click(function() {
 
 $(".autoclick").click(function() {
   autoclick = !autoclick;
+  autoclickTasks();
 });
 
-while (autoclick) {
-  setTimeout(function() { 
-    // Add tasks to do 
+function autoclickTasks() {
+  if (autoclick) {
+    // Add tasks to do
     money += acceptMoneyPerClick;
-  }), 2000
+
+    // Call the function again after 2 seconds
+    setTimeout(autoclickTasks, 2000);
+  }
 }
 
 /*===============TABS===============*/
