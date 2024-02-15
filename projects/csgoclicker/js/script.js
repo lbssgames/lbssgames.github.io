@@ -833,6 +833,7 @@ $(".about").click(function() {
 
 $(".autoclick").click(function() {
   autoclick = !autoclick
+  document.querySelector('.autoclick').value = 'Hide';
   while (autoclick) {
     setInterval(1)
     money += acceptMoneyPerClick
