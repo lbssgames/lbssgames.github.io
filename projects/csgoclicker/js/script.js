@@ -836,7 +836,7 @@ $(".about").click(function() {
 $(".autoclick").click(function() {
   autoclick = !autoclick;
   while (autoclick) {
-    await sleep(1);
+    // await sleep(1);
     money += acceptMoneyPerClick;
   }
 });
