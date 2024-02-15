@@ -647,6 +647,8 @@ var rarityValue = {
   covert: 0.995,
 };
 
+async function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
+
 function randSkin() {
      var skinsArray = [];
      var randSkin = "";
@@ -834,7 +836,7 @@ $(".about").click(function() {
 $(".autoclick").click(function() {
   autoclick = !autoclick;
   while (autoclick) {
-    setInterval(1);
+    await sleep(1);
     money += acceptMoneyPerClick;
   }
 });
