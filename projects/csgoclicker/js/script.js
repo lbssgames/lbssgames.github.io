@@ -8,7 +8,7 @@ var money = 7.50;
 var currentCase = "case2";
 var acceptMoneyPerClick = 0.1;
 var autoclick = false;
-var autoClickDelayautoClickDelay = 1000;
+var autoClickDelay = 200;
 
 
 
