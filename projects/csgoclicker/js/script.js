@@ -840,10 +840,10 @@ $(".autoclick").click(function() {
   autoclick = !autoclick;
   if (autoclick) {
     document.getElementById('autoclickButton').style.color = "#00FF00"
-    document.getElementById('acceptButton').html = "AUTOCLICKER ENABLED"
+    document.getElementById('acceptButton').textContent = "AUTOCLICKER ENABLED"
   } else {
     document.getElementById('autoclickButton').style.color = "#FF0000"
-    document.getElementById('acceptButton').html = "CLICK"
+    document.getElementById('acceptButton').textContent = "CLICK"
   }
   autoclickTasks();
 });
