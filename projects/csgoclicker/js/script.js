@@ -841,11 +841,11 @@ $(".autoclick").click(function() {
   if (autoclick) {
     document.getElementById('autoclickButton').style.color = "#00FF00"
     document.getElementById('acceptButton').textContent = "AUTOCLICKING"
-    document.getElementById('acceptButton').style.color = "#FF0000"
+    document.getElementById('acceptButton').style.background = "linear-gradient(#d71c1c, #0e382c);"
   } else {
     document.getElementById('autoclickButton').style.color = "#FF0000"
     document.getElementById('acceptButton').textContent = "CLICK"
-    document.getElementById('acceptButton').style.color = "#00FF00"
+    document.getElementById('acceptButton').style.background = "linear-gradient(#1d7751, #0e382c);"
   }
   autoclickTasks();
 });
