@@ -28,5 +28,10 @@
 		"icon": "/projects/csgoclicker/logo.png",
 		"name": "CSGO Clicker",
 		"link": "/projects/csgoclicker/index.html"
+	},
+	{
+		"icon": "/projects/bitlife/logo.png",
+		"name": "Bitlife",
+		"link": "/projects/bitlife/index.html"
 	}
 ]
