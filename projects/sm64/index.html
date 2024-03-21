@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type='text/javascript'>
+    if (document.referrer.indexOf(window.location.origin) === -1) {
+      window.location.href = '/error'; // Redirect to an error page
+    }
+  </script>
   <style>
     body {
       display: flex;
