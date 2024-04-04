@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Incognito
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <https://www.gnu.org/licenses/>.
+            -->
+        <meta name="description" content="Evade censorship">
+        <!-- Open Graph tags -->
+        <meta property="og:title" content="Plooshi Docs">
+        <meta property="og:description" content="Evade censorship">
+        <meta property="og:image" content="/ploosh.webp">
+        <!-- End Open Graph Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="" id="favicon">
+        <script src="./script/particles.js"></script>
+    </head>
+
+    <body>
+        <script>
+            document.body.setAttribute('data-appearance', (localStorage.getItem('incog||appearance')))
+        </script>
+        <header data-init>
+            <div class="search"></div>
+            <nav id="btns"></nav>
+            <a id="open-nav"><i style="color: var(--accent)" class="fa-solid fa-ellipsis-v secondary"></i></a>
+            <a id="close-nav"><i style="color: var(--accent)" class="fa-solid fa-xmark"></i></a>
+        </header>
+        <main></main>
+        <div style="display: none" class="access-panel">
+            <div class="controls">
+                <img class="icon" src="index.svg">
+                <input disabled="disabled" value="">
+                <button class="interact access-link" style="margin-right: 5px">attachment</button>
+                <button class="interact refresh-access" style="margin-right: 5px">refresh</button>
+                <button class="interact close-access">close</button>
+            </div>
+        </div>
+        <iframe src="about:blank" class="access-frame"
+            style="position: absolute; overflow-x: hidden; width: 100%; height: 100%; display: none; border: none; background: #FFF;"></iframe>
+        <form id="access-form"></form>
+        <div class="particles"></div>
+        <script src="uv/uv.bundle.js"></script>
+        <script src="uv/uv.config.js"></script>
+        <script src="script/index.js" type="module"></script>
+        <script>let ref = window.parent ? document.referrer : null;
+        /*if (ref == "https://www.gstatic.com/") {
+            document.body.innerHTML = "<center><h1>Plooshi Docs</h1><br><br>Hi! Embedding in Google Sites is temporarily disabled.<br> This is because of a user refusing to stop embedding our proxy, while they had no permisson to use it.<br>Thank you for your understanding.</center>"
+        }*/</script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+{
+    "main": {
+        "title": "About Plooshi Docs",
+        "data": "Plooshi Docs is a web service which can be used to go to censored websites."
+    },
+    "authors": [
+        {
+            "name": "<a href=\"https://github.com/caracal-js\">Caracal.js</a>",
+            "data": "Creator of <a href=\"https://github.com/titaniumnetwork-dev/Ultraviolet\">Ultr&#173;avi&#173;olet</a> & Incognito</p>"
+        },
+        {
+            "name": "<a href=\"https://github.com/e9x\">e9x</a>",
+            "data": "Creator of <a href=\"https://github.com/tomphttp/\">TompHTTP</a>"
+        },
+        {
+            "name": "<a href=\"https://github.com/amethystnetwork-dev/\">Amethyst Network</a>",
+            "data": "Created deployable version"
+        },
+        {
+            "name": "<a href=\"https://github.com/plooshi/\">Ploosh</a>",
+            "data": "Plooshi Docs"
+        }
+    ],
+    "socials": [
+        {
+            "name": "<a href=\"https://discord.gg/unblock\">TN Server</a>",
+            "data": "The official Ti&#173;tan&#173;ium Ne&#173;two&#173;rk disc&#173;ord server."
+        }
+    ],
+    "contact": [
+        {
+            "name": "<a href=\"mailto:me@ploosh.dev\">Ploosh</a>"
+        }
+    ]
+}
