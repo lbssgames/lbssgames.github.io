@@ -33,5 +33,9 @@
 		"icon": "/projects/btlife/logo.png",
 		"name": "Bitlife",
 		"link": "/projects/btlife/index.html"
-	}
+	},
+	{
+		"icon": "/projects/dogeminer/logo.png",
+		"name": "Doge Miner",
+		"link": "/projects/dogeminer/index.html"
 ]
