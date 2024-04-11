@@ -43,5 +43,10 @@
 		"icon": "/projects/tetris/logo.png",
 		"name": "Twitch Tetris",
 		"link": "/projects/tetris/index.html"
+	},
+	{
+		"icon": "projects/1/logo.png",
+		"name": "1",
+		"link": "/projects/tetris/index.html"
 	}
 ]
