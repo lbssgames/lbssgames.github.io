@@ -38,5 +38,10 @@
 		"icon": "/projects/dogeminer/logo.png",
 		"name": "Doge Miner",
 		"link": "/projects/dogeminer/index.html"
+	},
+	{
+		"icon": "/projects/tetris/logo.png",
+		"name": "Twitch Tetris",
+		"link": "/projects/tetris/index.html"
 	}
 ]
