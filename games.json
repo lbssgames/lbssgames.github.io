@@ -48,5 +48,10 @@
 		"icon": "projects/1/logo.png",
 		"name": "1",
 		"link": "/projects/1/index.html"
+	},
+	{
+		"icon": "projects/bad-ice-cream/bad-ice-cream.png",
+		"name": "Bad Ice Cream",
+		"link": "/projects/bad-ice-cream/index.html"
 	}
 ]
