@@ -58,5 +58,10 @@
 		"icon": "projects/bloxors/logo.png",
 		"name": "Bloxors",
 		"link": "/projects/bloxors/index.html"
+	},
+	{
+		"icon": "projects/tanuki-sunset/img/logo.png",
+		"name": "Tanuki Sunset",
+		"link": "/projects/tanuki-sunset/index.html"
 	}
 ]
