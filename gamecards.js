@@ -47,5 +47,3 @@ function createGameCards() {
 }
 
 createGameCards();
-
-createGameCards();
