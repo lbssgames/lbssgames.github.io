@@ -11,20 +11,19 @@ function loadJSON(callback) {
     xhr.send(null);
 }
 
-// Create game cards dynamically from JSON data
 function createGameCards() {
     loadJSON(function (response) {
         var games = JSON.parse(response);
 
         var gameGrid = document.getElementById("game-grid");
-        games.forEach(function(game) {
+        games.forEach(function (game) {
             var gameCard = document.createElement("div");
             gameCard.classList.add("game-card");
 
             var icon = document.createElement("img");
             icon.classList.add("game-icon");
             icon.src = game.icon;
-            icon.addEventListener("click", function() {
+            icon.addEventListener("click", function () {
                 window.location.href = game.link;
             });
 
@@ -32,14 +31,16 @@ function createGameCards() {
             title.classList.add("game-title");
             title.textContent = game.name;
 
-            var link = document.createElement("a");
-            link.classList.add("game-link");
-            link.href = game.link;
-            link.textContent = "Play now";
+            var playButton = document.createElement("button");
+            playButton.classList.add("game-button");
+            playButton.textContent = "Play now";
+            playButton.addEventListener("click", function () {
+                window.location.href = game.link;
+            });
 
             gameCard.appendChild(icon);
             gameCard.appendChild(title);
-            gameCard.appendChild(link);
+            gameCard.appendChild(playButton);
             gameGrid.appendChild(gameCard);
         });
     });
