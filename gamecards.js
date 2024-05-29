@@ -33,7 +33,7 @@ function createGameCards() {
 
             var playButton = document.createElement("button");
             playButton.classList.add("game-button");
-            playButton.textContent = "Play now";
+            playButton.textContent = "Play!";
             playButton.addEventListener("click", function () {
                 window.location.href = game.link;
             });
